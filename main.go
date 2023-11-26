@@ -27,7 +27,7 @@ func handleFailure(e error) {
 
 var rootCmd = &cobra.Command{
 	Use:   "executer",
-	Short: fmt.Sprintf("Executes SSH commands on a remote host. Version %s", version),
+	Short: fmt.Sprintf("Executes SSH commands on a remote host\nDeveloped by PCA team\nVersion %s", version),
 	Run: func(cmd *cobra.Command, args []string) {
 
 		config := &ssh.ClientConfig{
